@@ -35,11 +35,20 @@ Sauce: [Wikipedia](https://en.wikipedia.org/wiki/Set_(card_game))
 * Note that a set may not always be present. If not, the dealer can exchange cards with the deck. 
 
 ## Additional Resources
-* Wikipedia page [here](https://en.wikipedia.org/wiki/Set_(card_game)) for a description of the game. 
-* Set Instructions [here](https://www.setgame.com/sites/default/files/instructions/SET%20INSTRUCTIONS%20-%20ENGLISH.pdf)
+* More background on the wikipedia page [here](https://en.wikipedia.org/wiki/Set_(card_game)).
+* Alternative Set Instructions [here](https://www.setgame.com/sites/default/files/instructions/SET%20INSTRUCTIONS%20-%20ENGLISH.pdf).
 
 ## Implementation
-YOur code for the game must define the following class and methods described below. All data members must be **private**. Feel free to use a composition-, inheritance-, or mixed-OOP approach!
+Your code for the game must define the following class and methods described below. All data members must be **private**. Feel free to use a composition-, inheritance-, or mixed-OOP approach!
+
+### SetGame Class 
+
+### Table Class
+
+### Players Class
+
+### Card Class
+
 
 ## Extra Credit
 * Implement a method `save_game` for state preservation, and a method `load_game` to load a previously saved state.
