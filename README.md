@@ -1,22 +1,23 @@
 # CS-162 Portfolio Project Proposal: Set Card Game Project
-For this project, students will write a class called `SetGame` that allows two people to play a console-based version of the multi-player card game Set.
+For this project, students will write a class called `SetGame` that allows two people to play a console-based version of the card game Set.
 
 ## Description
-* Set is a card game that is usually played with 2-6 people.
+* Set is a card game that is usually played with 1 or more people (usually 2-6).
 * Cards have unique idenfiers, i.e.:
   * A unique number: 1, 2, 3
   * A unique sybol: diamond, squiggle, oval
   * A unique shading: open, striped, solid
   * A unique color: green, blue, red
 * There are 81 **isomorphic** unique cards (3 * 3 * 3 * 3 = 81). 
-* The main goal of the game is to find combinations of of the cards that produce a 'Set'. 
+* The main goal or essence of the game is to find combinations of cards that produce a 'Set'. 
 
-## So, What Constitues a Set?
+## So, What Constitutes a Set?
 * A set satisfies all of the the conditions:
   * Same number or 3 different numbers. 
   * Same shape or 3 different shapes.
   * Same shading or 3 different shadings.
   * Same color 3 different colors. 
+* For example, the following three cards from a Set deck would constitute a set. Note each of the cards have a unique number, symbol, shading, and color, and are thus a set. 
 
 ## Game Play and Rules
 * The game is normally played by dealing 12, 15, 18 or more cards on the table. 
