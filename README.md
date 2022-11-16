@@ -1,5 +1,6 @@
 # CS-162 Portfolio Project Proposal: Set Card Game Project
 ![Set-Board](./assets/set-board.png)
+
 For this project, students will write a class called `SetGame` that allows two people to play a console-based version of the card game Set.
 
 ## Description
