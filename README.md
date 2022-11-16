@@ -31,8 +31,8 @@ Sauce: [Wikipedia](https://en.wikipedia.org/wiki/Set_(card_game))
 * A player calls "Set!" if they they they have spotted 3 cards that comprise a Set.
 * If a valid set, the three cards are removed from the table to the players pile. The board is then replenished with cards from the deck. 
 * Play continues until all cards have been played to the table and no more sets are to be found.
+ * Note: A set may not always be present. If not, the dealer can exchange cards with the deck. 
 * Players count how many cards they have in their stack at the end (each card is worth one point). The winner with the most points wins. 
-* Note that a set may not always be present. If not, the dealer can exchange cards with the deck. 
 
 ## Additional Resources
 * More background on the wikipedia page [here](https://en.wikipedia.org/wiki/Set_(card_game)).
