@@ -52,6 +52,6 @@ Your code for the game must define the following class and methods described bel
 
 ## Extra Credit
 * Implement a method `save_game` for state preservation, and a method `load_game` to load a previously saved state.
-* Implement a method to incur penalties for incorrect Sets given by players, i.e. players should be able to incur negative points. 
+* Implement logic to incur penalties for incorrect Sets given by players, i.e. players should be able to incur negative points when considering the final winner.
 
 
