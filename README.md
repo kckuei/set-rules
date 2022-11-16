@@ -48,9 +48,9 @@ The `SetGame` object represents the game as played. The class should contain inf
 * shuffle_deck: shuffles the card deck.
 * swap_cards(n): swaps n cards from the board and deck.
 * call_set(player_id, [card_1_id, card_2_id, card_3_id]): allows a player to call a Set. The first argument is the player id, and the second argument is a list of size 3 representing the individual unique card identifiers.
- * The method should validate the input
-  * The number of cards is 3, there are no repeat cards, and the card identifiers are valid.
-  * The player id is valid.
+  * The method should validate the input
+    * The number of cards is 3, there are no repeat cards, and the card identifiers are valid.
+    * The player id is valid.
 
 ### Deck Class
 A `Deck` object represents the reserve cards (not in play on the Table).
