@@ -33,11 +33,11 @@ Sauce: [Wikipedia](https://en.wikipedia.org/wiki/Set_(card_game))
 
 ## Game Play and Rules
 * The game is normally played by dealing 12, 15, 18 or more cards on the table. 
-* A player calls "Set!" if they they they have spotted 3 cards that comprise a Set.
-* If a valid set, the three cards are removed from the table to the players pile. The board is then replenished with cards from the deck. 
+* A player calls "Set!" when he/she think they have spotted 3 cards that comprise a Set.
+* If it's a valid set, the three cards are removed from the table and into the players pile. The board is then replenished with cards from the deck. 
 * Play continues until all cards have been played to the table and no more sets are to be found.
-  * Note: A set may not always be present. If not, the dealer can exchange cards with the deck. 
-* Players count how many cards they have in their stack at the end (each card is worth one point). The winner with the most points wins. 
+  * Note: A set may not always be present, in which case the dealer can exchange cards with the reserve deck. 
+* At the end of the game, players count how many cards they have in their stack at the end (each card is worth one point). The winner with the most points wins!
 
 ## Additional Resources
 * More background on the wikipedia page [here](https://en.wikipedia.org/wiki/Set_(card_game)).
@@ -48,24 +48,25 @@ Your code for the game must define the following class and methods described bel
 
 ### SetGame Class 
 The `SetGame` object represents the game as played. The class should contain information about the players and table. It should contain the following methods (but may have more):
+* **create_player**: should create and add up to 6 players to the game.
 * **create_deck**: should create/initialize a deck of 81 isomorphic cards. 
-* **create_player**: add up to 6 players to the game.
 * **call_set**(player_id, [card_1_id, card_2_id, card_3_id]): allows a player to call a Set. The first argument is the player id, and the second argument is a list representing the individual unique card identifiers.
   * The method should validate the input first.
+    * The player id should be valid.
     * The number of cards or items in the list should be 3
     * There should be no repeat cards. 
-    * The identifiers for the card should be valid.
-    * The player id should be valid.
+    * The identifiers for the card should be valid. The cards should be in play on the table.
   * The method should also verify/check the validity of the Set input.
     * The method should return the string "That's a spiccyy Set" if it's a valid Set.
     * The method should return the string "Not quite a Set...better luck next time!" if it's an invalid Set.
 * **declare_winner**: declares the winner of the game. 
     * If the game is not yet ended, returns "Game has not ended. There are still more Sets to find!"
-    * Otherwise, it should return 
+    * If it is a tie, it should return "It's a tie! Everyone loses!"
+    * Otherwise, it should return "Player <id> is the winner!", where <id> is the player id.
 
 ### Deck Class
 A `Deck` object represents the reserve cards (not in play on the Table).
-* **shuffle_deck**: shuffles the reserve card deck.
+* **shuffle_deck**: should shuffle the reserve card deck.
 
 ### Table Class
 A `Table` object represents a board from which to display cards in play.
@@ -91,6 +92,6 @@ The `Card` objects represent individual cards. The card class should have attrib
 
 ## Extra Credit
 * Implement a method `save_game` for state preservation, and a method `load_game` to load a previously saved state.
-* Implement logic to incur penalties for incorrect Sets given by players, i.e. players should be able to incur negative points when considering the final winner.
+* Implement logic to incur penalties for incorrect Sets given by players, i.e. players should be able to accumulate negative points if they make an incorrect guess, and that should factor into the final declaration for the winner.
 
 
