@@ -54,7 +54,7 @@ The `SetGame` object represents the game as played. The class should contain inf
   * The method should also verify/check the validity of the set.
     * The method should return the string "That's a spiccyy Set" if it's a Set.
     * The method shoudl return the string "Not quite a Set...better luck next time!" if it's not.
-* declare_winner: declares the winner of the game. 
+* **declare_winner**: declares the winner of the game. 
 
 ### Deck Class
 A `Deck` object represents the reserve cards (not in play on the Table).
