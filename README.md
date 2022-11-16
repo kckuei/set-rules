@@ -6,7 +6,7 @@ For this project, students will write a class called `SetGame` that allows two p
 ## Description
 * Set is a card game that is typically played with with 2-6 people, although you can also play it on your own. Unlike other games, it is *not* turn-based.
 * The main goal of the game is to find combinations of three cards that produce a 'Set' from a Set deck.  
-* Cards have unique idenfiers, i.e.:
+* Cards in a Set deck have unique idenfiers, i.e.:
   * A unique **number**: 1, 2, 3
   * A unique **symbol**: diamond, squiggle, oval
   * A unique **shading**: open, striped, solid
