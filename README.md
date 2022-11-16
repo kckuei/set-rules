@@ -42,6 +42,10 @@ Sauce: [Wikipedia](https://en.wikipedia.org/wiki/Set_(card_game))
 Your code for the game must define the following class and methods described below. All data members must be **private**. Feel free to use a composition-, inheritance-, or mixed-OOP approach!
 
 ### SetGame Class 
+* create_deck: should create/initialize a deck of 81 isomorphic cards. 
+* create_players: add up to 6 players.
+* shuffle_deck: shuffles the card deck.
+* swap_cards(n): swaps n cards from the board and deck. 
 
 ### Table Class
 
