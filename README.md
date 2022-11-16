@@ -4,7 +4,7 @@
 For this project, students will write a class called `SetGame` that allows two people to play a console-based version of the card game Set.
 
 ## Description
-* Set is a card game that is typically played with with 2-6 people, although you can also play on your own.
+* Set is a card game that is typically played with with 2-6 people, although you can also play it on your own.
 * Cards have unique idenfiers, i.e.:
   * A unique **number**: 1, 2, 3
   * A unique **symbol**: diamond, squiggle, oval
@@ -17,7 +17,7 @@ For this project, students will write a class called `SetGame` that allows two p
 
 Sauce: [Wikipedia](https://en.wikipedia.org/wiki/Set_(card_game))
 
-## So, What Constitutes a Set?
+## So, What Makes a Set?
 * A set satisfies all of the the conditions:
   * Same number or 3 different numbers. 
   * Same shape or 3 different shapes.
@@ -32,12 +32,14 @@ Sauce: [Wikipedia](https://en.wikipedia.org/wiki/Set_(card_game))
 * You can try this [Set demo](http://www.setgame.com/set/puzzle) to get an idea of what is, and isn't a Set! This was used to generate the examples shown above.
 
 ## Game Play and Rules
-* The game is normally played by dealing 12, 15, 18 or more cards on the table. 
-* A player calls "Set!" when he/she think they have spotted 3 cards that comprise a Set.
-* If it's a valid set, the three cards are removed from the table and into the players pile. The board is then replenished with cards from the deck. 
+* The game is normally played by dealing 12, 15, 18 or more cards on the table. We'll use 12 cards for the project.
+* A player calls "Set!" when he or she thinks they have found 3 cards that comprise a Set.
+* If it's a valid set, the three cards are moved from the table into the players pile. 
+* The board is then replenished with cards from the deck. 
 * Play continues until all cards have been played to the table and no more sets are to be found.
   * Note: A set may not always be present, in which case the dealer can exchange cards with the reserve deck. 
-* At the end of the game, players count how many cards they have in their stack at the end (each card is worth one point). The winner with the most points wins!
+* At the end of the game, players count how many cards they have in their stack at the end (each card is worth one point).
+* The winner with the most points wins!
 
 ## Additional Resources
 * More background on the wikipedia page [here](https://en.wikipedia.org/wiki/Set_(card_game)).
@@ -66,10 +68,11 @@ The `SetGame` object represents the game as played. The class should contain inf
 
 ### Deck Class
 A `Deck` object represents the reserve cards (not in play on the Table). Cards may be moved to/from the deck to the table, or to player piles.
+* **deal**: should deal 12 cards to the table.
 * **shuffle_deck**: should shuffle the reserve card deck.
 
 ### Table Class
-A `Table` object represents a board from which to display cards in play.
+A `Table` object represents a board from which to display cards in play. At any given time, we'll have 12 cards in play at the table so long as there are still cards in the reserve deck.
 * **swap_cards**(n): swaps n cards at random between the reserve deck and the table. 
   * If there are less than n cards left in the deck, say k cards remaining, then only k cards should be swapped. 
 * **display_table**(): should print the table.
