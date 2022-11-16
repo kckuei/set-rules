@@ -69,7 +69,7 @@ A `Table` object represents a board from which to display cards in play.
     * `'3_oval_fill_red'`
   * The method should output the current cards in play:
   ```
-  Current Board:
+  Board (cards in play):
   ['1_diamond_open_green', '2_squiggle_striped_blue', '3_oval_fill_red',...]
   ```
 
