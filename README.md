@@ -19,34 +19,34 @@ For this project, students will write a class called `SetGame` that allows two p
 Sauce: [Wikipedia](https://en.wikipedia.org/wiki/Set_(card_game))
 
 ## So, What Makes a Set?
-* A set satisfies all of the the conditions:
+* A set satisfies **all** of the the conditions:
   * Same number or 3 different numbers. 
   * Same shape or 3 different shapes.
   * Same shading or 3 different shadings.
   * Same color or 3 different colors. 
-* For example, the following three cards from a Set deck would constitute a set. Note each of the cards have a unique number, symbol, shading, and color, and are thus a set. 
+* In other words, either *all* of the attributes are different, or there is *at most* one common attribute.
+* For example, the following three cards from a Set deck would constitute a set. Note each of the cards have a unique number, symbol, shading, and color, thus make up a Set. 
  ![Set](./assets/set.png)
  
  Sauce: [Wikipedia](https://en.wikipedia.org/wiki/Set_(card_game))
-* Here are a few more explicit examples.
+* Here are a few more explicit examples with explanations.
 ![Set](./assets/set-examples.png)
-* You can try this [Set demo](http://www.setgame.com/set/puzzle) to get an idea of what is, and isn't a Set! This was used to generate the examples shown above.
+* Try it out yourself with this [Set demo](http://www.setgame.com/set/puzzle)! This reosurce was used to generate the examples shown above.
 
 ## Game Play and Rules
 * The game is normally played by dealing 12, 15, 18 or more cards on the table. We'll use 12 cards for the project.
-* A player calls "Set!" when he or she thinks they have found 3 cards that comprise a Set.
+* A player calls "Set!" when he or she thinks they have spotted 3 cards on the table that make a Set.
 * If it's a valid set, the three cards are moved from the table into the players pile. 
-* The board is then replenished with cards from the deck. 
+* The board is then replenished with 3 more cards from the deck, or until there are no more cards in reserve.
 * Play continues until all cards have been played to the table and no more sets are to be found.
   * Note: A set may not always be present, in which case the dealer can exchange cards with the reserve deck. 
-* At the end of the game, players count how many cards they have in their stack at the end (each card is worth one point).
-* The winner with the most points wins!
+* At the end of the game, players count how many cards they have in their stack at the end. The winner with the most points wins!
 
 ## Additional Resources
 * More background on the wikipedia page [here](https://en.wikipedia.org/wiki/Set_(card_game)).
 * Alternative Set Instructions [here](https://www.setgame.com/sites/default/files/instructions/SET%20INSTRUCTIONS%20-%20ENGLISH.pdf).
 
-## Implementation
+## Implementation Notes
 Your code for the game must define the following class and methods described below. All data members must be **private**. Feel free to use a composition-, inheritance-, or mixed-OOP approach where it makes sense!
 
 ### SetGame Class 
@@ -55,17 +55,17 @@ The `SetGame` object represents the game as played. The class should contain inf
 * **create_deck**: should create/initialize a deck of 81 isomorphic cards. 
 * **call_set**(player_id, [card_1_id, card_2_id, card_3_id]): allows a player to call a Set. The first argument is the player id, and the second argument is a list representing the individual unique card identifiers.
   * The method should first validate the user input.
-    * The identifiers for the card should be valid, and the cards should be currently in play on the table (they can't point to cards in the Deck). 
-    * It should return "Invalid player id" if the player id is not valid.
-    * It should return "Invalid number of cards" if the number of items in the list is not equal to 3.
+    * If the player is id not valid, it should return "Invalid player id"
+    * If the Set is not 3 unique Cards, it should return "Invalid Set"
+    * If the Cards are not on play on the table, it should return "The requested card is not on the table"
   * The method should also verify/check the validity of the Set itself.
     * The method should return the string "That's a spiccyy Set" if it's a valid Set.
     * The method should return the string "Not quite a Set...better luck next time!" if it's an invalid Set.
-  * If the set is valid, the score of the user should be updated, and the cards should be cleared from the board. The removed cards should automatically be replaced with cards from the reserve deck.  
+  * If the set is valid, the score of the user should be updated accordingly, and the cards should be removed from the board. The removed cards should automatically be replaced with cards from the reserve deck as long as there are stil cards in the reserve deck.
 * **declare_winner**: declares the winner of the game. 
   * If the game is not yet ended, returns "Game has not ended. There are still more Sets to find!"
-  * If it is a tie, it should return "It's a tie! Everyone loses!"
-  * Otherwise, it should return "Player <id> is the winner!", where <id> is the player id.
+  * If it is a tie, it should return "It's a tie!"
+  * Otherwise, it should return "Player <id> is the winner!", where <id> is the unique player id.
 
 ### Deck Class
 A `Deck` object represents the reserve cards (not in play on the Table). Cards may be moved to/from the deck to the table, or to player piles.
