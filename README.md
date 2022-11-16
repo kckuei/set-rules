@@ -27,7 +27,7 @@ Sauce: [Wikipedia](https://en.wikipedia.org/wiki/Set_(card_game))
  Sauce: [Wikipedia](https://en.wikipedia.org/wiki/Set_(card_game))
 * Here are a few more explicit examples.
 ![Set](./assets/set-examples.png)
-* You can try this [Set demo](http://www.setgame.com/set/puzzle) to get an idea of what is, and isn't a Set! This was used to generate the examples above.
+* You can try this [Set demo](http://www.setgame.com/set/puzzle) to get an idea of what is, and isn't a Set! This was used to generate the examples shown above.
 
 ## Game Play and Rules
 * The game is normally played by dealing 12, 15, 18 or more cards on the table. 
