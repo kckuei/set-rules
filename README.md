@@ -34,8 +34,15 @@ Sauce: [Wikipedia](https://en.wikipedia.org/wiki/Set_(card_game))
 * Players count how many cards they have in their stack at the end (each card is worth one point). The winner with the most points wins. 
 * Note that a set may not always be present. If not, the dealer can exchange cards with the deck. 
 
-
-## Additional References
+## Additional Resources
 * Wikipedia page [here](https://en.wikipedia.org/wiki/Set_(card_game)) for a description of the game. 
 * Set Instructions [here](https://www.setgame.com/sites/default/files/instructions/SET%20INSTRUCTIONS%20-%20ENGLISH.pdf)
+
+## Implementation
+YOur code for the game must define the following class and methods described below. All data members must be **private**. Feel free to use a composition-, inheritance-, or mixed-OOP approach!
+
+## Extra Credit
+* Implement a method `save_game` for state preservation, and a method `load_game` to load a previously saved state.
+* Implement a method to incur penalties for incorrect Sets given by players, i.e. players should be able to incur negative points. 
+
 
