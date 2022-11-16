@@ -9,7 +9,7 @@ For this project, students will write a class called `SetGame` that allows two p
   * A unique shading: open, striped, solid
   * A unique color: green, blue, red
 * There are 81 **isomorphic** cards, all of which are unique (3 * 3 * 3 * 3 = 81). Check out the image below! 
-* The main goal of the game is to find combinations of cards that produce a 'Set'. 
+* The main goal of the game is to find combinations of three cards that produce a 'Set'. 
 
 <img alt="Set-Isomorphic-Cards" src="./assets/set-isomorphic.svg" width="400"/>
 
