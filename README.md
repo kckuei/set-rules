@@ -2,7 +2,7 @@
 For this project, students will write a class called `SetGame` that allows two people to play a console-based version of the multi-player card game Set.
 
 ## Description
-* Set is a card game that can be played with 2 or more people.
+* Set is a card game that is usually played with 2-6 people.
 * Cards have unique idenfiers, i.e.:
   * A unique number: 1, 2, 3
   * A unique sybol: diamond, squiggle, oval
