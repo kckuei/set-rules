@@ -60,9 +60,9 @@ A `Table` object represents a board from which to display cards in play.
 * display_table(): should print the table.
  * A card can be represented as <1,2,3>\_<diamond,squiggle,oval>\_<open,striped,fill>\_<green,blue,red>
  * For example, the Set shown above would be represented by the following strings:
-  * 1_diamond_open_green
-  * 2_squiggle_striped_blue
-  * 3_oval_fill_red
+  * ```python '1_diamond_open_green'```
+  * ```python '2_squiggle_striped_blue'```
+  * ```python '3_oval_fill_red'```
 
 ### Players Class
 The `Player` object represents individual players.
