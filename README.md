@@ -11,6 +11,8 @@ For this project, students will write a class called `SetGame` that allows two p
 * There are 81 **isomorphic** unique cards (3 * 3 * 3 * 3 = 81). 
 * The main goal or essence of the game is to find combinations of cards that produce a 'Set'. 
 
+[Set-Ismorphic Cards](./assets/set-isomoprhic.svg)
+
 ## So, What Constitutes a Set?
 * A set satisfies all of the the conditions:
   * Same number or 3 different numbers. 
