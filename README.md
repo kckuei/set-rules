@@ -12,6 +12,7 @@ For this project, students will write a class called `SetGame` that allows two p
 * The main goal or essence of the game is to find combinations of cards that produce a 'Set'. 
 
 <img alt="Set-Isomorphic-Cards" src="./assets/set-isomorphic.svg" width="400"/>
+Sauce: Wikipedia
 
 ## So, What Constitutes a Set?
 * A set satisfies all of the the conditions:
@@ -20,8 +21,10 @@ For this project, students will write a class called `SetGame` that allows two p
   * Same shading or 3 different shadings.
   * Same color 3 different colors. 
 * For example, the following three cards from a Set deck would constitute a set. Note each of the cards have a unique number, symbol, shading, and color, and are thus a set. 
+* You can try this single-player [Set demo](http://www.setgame.com/set/puzzle) to get an idea of what is, and isn't a Set!
 
 ![Set](./assets/set.png)
+Sauce: Wikipedia
 
 ## Game Play and Rules
 * The game is normally played by dealing 12, 15, 18 or more cards on the table. 
@@ -33,7 +36,6 @@ For this project, students will write a class called `SetGame` that allows two p
 
 
 ## Additional References
-* Set Instructions [here](https://www.setgame.com/sites/default/files/instructions/SET%20INSTRUCTIONS%20-%20ENGLISH.pdf)
 * Wikipedia page [here](https://en.wikipedia.org/wiki/Set_(card_game)) for a description of the game. 
-* A Set demo application is provided [here](http://www.setgame.com/set/puzzle). You can try different combinations to verify what is and isn't a 'set'.
+* Set Instructions [here](https://www.setgame.com/sites/default/files/instructions/SET%20INSTRUCTIONS%20-%20ENGLISH.pdf)
 
