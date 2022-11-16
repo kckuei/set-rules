@@ -29,7 +29,7 @@ Sauce: [Wikipedia](https://en.wikipedia.org/wiki/Set_(card_game))
 ## Game Play and Rules
 * The game is normally played by dealing 12, 15, 18 or more cards on the table. 
 * A player calls "Set!" if they they they have spotted 3 cards that comprise a set (more on this later!).
-* If a valid set, the three cards are removed from the table to the players pile. The board is then replenished with cards from teh deck. 
+* If a valid set, the three cards are removed from the table to the players pile. The board is then replenished with cards from the deck. 
 * Play continues until all cards have been played to the table and no more sets are to be found.
 * Players count how many cards they have in their stack at the end (each card is worth one point). The winner with the most points wins. 
 * Note that a set may not always be present. If not, the dealer can exchange cards with the deck. 
@@ -48,9 +48,13 @@ The `SetGame` object represents the game as played. The class should contain inf
 * shuffle_deck: shuffles the card deck.
 * swap_cards(n): swaps n cards from the board and deck.
 * call_set(player_id, [card_1_id, card_2_id, card_3_id]): allows a player to call a Set. The first argument is the player id, and the second argument is a list of size 3 representing the individual unique card identifiers.
-  * The method should validate the input
+  * The method should validate the input first.
     * The number of cards is 3, there are no repeat cards, and the card identifiers are valid.
     * The player id is valid.
+  * The method should also verify/check the validity of the set.
+    * The method should return the string "That's a spiccyy Set" if it's a Set.
+    * The method shoudl return the string "Not quite a Set...better luck next time!" if it's not.
+* declare_winner: declares the winner of the game. 
 
 ### Deck Class
 A `Deck` object represents the reserve cards (not in play on the Table).
