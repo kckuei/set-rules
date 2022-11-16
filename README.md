@@ -8,10 +8,10 @@ For this project, students will write a class called `SetGame` that allows two p
   * A unique sybol: diamond, squiggle, oval
   * A unique shading: open, striped, solid
   * A unique color: green, blue, red
-* There are 81 **isomorphic** unique cards (3 * 3 * 3 * 3 = 81). 
+* There are 81 **isomorphic** cards, all of which are unique (3 * 3 * 3 * 3 = 81). Check out the image below! 
 * The main goal or essence of the game is to find combinations of cards that produce a 'Set'. 
 
-<img alt="Set-Isomorphic-Cards" src="./assets/set-isomorphic.svg" width="200"/>
+<img alt="Set-Isomorphic-Cards" src="./assets/set-isomorphic.svg" width="400"/>
 
 ## So, What Constitutes a Set?
 * A set satisfies all of the the conditions:
@@ -20,6 +20,8 @@ For this project, students will write a class called `SetGame` that allows two p
   * Same shading or 3 different shadings.
   * Same color 3 different colors. 
 * For example, the following three cards from a Set deck would constitute a set. Note each of the cards have a unique number, symbol, shading, and color, and are thus a set. 
+
+![Set](./assets/set.png)
 
 ## Game Play and Rules
 * The game is normally played by dealing 12, 15, 18 or more cards on the table. 
