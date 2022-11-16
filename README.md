@@ -5,7 +5,7 @@ For this project, students will write a class called `SetGame` that allows two p
 * Set is a card game that is usually played with 1 or more people (usually 2-6).
 * Cards have unique idenfiers, i.e.:
   * A unique number: 1, 2, 3
-  * A unique sybol: diamond, squiggle, oval
+  * A unique symbol: diamond, squiggle, oval
   * A unique shading: open, striped, solid
   * A unique color: green, blue, red
 * There are 81 **isomorphic** cards, all of which are unique (3 * 3 * 3 * 3 = 81). Check out the image below! 
@@ -39,21 +39,26 @@ Sauce: [Wikipedia](https://en.wikipedia.org/wiki/Set_(card_game))
 * Alternative Set Instructions [here](https://www.setgame.com/sites/default/files/instructions/SET%20INSTRUCTIONS%20-%20ENGLISH.pdf).
 
 ## Implementation
-Your code for the game must define the following class and methods described below. All data members must be **private**. Feel free to use a composition-, inheritance-, or mixed-OOP approach!
+Your code for the game must define the following class and methods described below. All data members must be **private**. Feel free to use a composition-, inheritance-, or mixed-OOP approach where it makes sense!
 
 ### SetGame Class 
-The SetGame represents the game as played. The class should contain information about the players and board. It should contain the following methods (but may have more):
+The SetGame object represents the game as played. The class should contain information about the players and table. It should contain the following methods (but may have more):
 * create_deck: should create/initialize a deck of 81 isomorphic cards. 
 * create_players: add up to 6 players.
 * shuffle_deck: shuffles the card deck.
 * swap_cards(n): swaps n cards from the board and deck. 
 
+### Deck Class
+A Deck object represents the reserve cards (not in play on the Table).
+
 ### Table Class
+A Table object represents a board from which to display cards in play.
 
 ### Players Class
+The Player object represents individual players.
 
 ### Card Class
-
+The Card objects represent individual cards. The card class should have attributes to describe the number, symbol, shape, and color. 
 
 ## Extra Credit
 * Implement a method `save_game` for state preservation, and a method `load_game` to load a previously saved state.
