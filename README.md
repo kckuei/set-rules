@@ -47,23 +47,28 @@ Your code for the game must define the following class and methods described bel
 ### SetGame Class 
 The `SetGame` object represents the game as played. The class should contain information about the players and table. It should contain the following methods (but may have more):
 * **create_deck**: should create/initialize a deck of 81 isomorphic cards. 
-* **create_players**: add up to 6 players.
-* **shuffle_deck**: shuffles the card deck.
-* **swap_cards**(n): swaps n cards from the board and deck.
-* **call_set**(player_id, [card_1_id, card_2_id, card_3_id]): allows a player to call a Set. The first argument is the player id, and the second argument is a list of size 3 representing the individual unique card identifiers.
+* **create_player**: add up to 6 players to the game.
+* **call_set**(player_id, [card_1_id, card_2_id, card_3_id]): allows a player to call a Set. The first argument is the player id, and the second argument is a list representing the individual unique card identifiers.
   * The method should validate the input first.
-    * The number of cards is 3, there are no repeat cards, and the card identifiers are valid.
-    * The player id is valid.
-  * The method should also verify/check the validity of the set.
-    * The method should return the string "That's a spiccyy Set" if it's a Set.
-    * The method shoudl return the string "Not quite a Set...better luck next time!" if it's not.
+    * The number of cards or items in the list should be 3
+    * There should be no repeat cards. 
+    * The identifiers for the card should be valid.
+    * The player id should be valid.
+  * The method should also verify/check the validity of the Set input.
+    * The method should return the string "That's a spiccyy Set" if it's a valid Set.
+    * The method should return the string "Not quite a Set...better luck next time!" if it's an invalid Set.
 * **declare_winner**: declares the winner of the game. 
+    * If the game is not yet ended, returns "Game has not ended. There are still more Sets to find!"
+    * Otherwise, it should return 
 
 ### Deck Class
 A `Deck` object represents the reserve cards (not in play on the Table).
+* **shuffle_deck**: shuffles the reserve card deck.
 
 ### Table Class
 A `Table` object represents a board from which to display cards in play.
+* **swap_cards**(n): swaps n cards between the reserve deck and the table. 
+  * If there are less than n cards left in the deck, say k cards remaining, then only k cards shoudl be swapped. 
 * **display_table**(): should print the table.
   * A card can be represented as <1,2,3>\_<diamond,squiggle,oval>\_<open,striped,fill>\_<green,blue,red>
   * For example, the Set shown above would be represented by the following strings:
@@ -71,7 +76,7 @@ A `Table` object represents a board from which to display cards in play.
     * `'2_squiggle_striped_blue'`
     * `'3_oval_fill_red'`
   * The method should output the current cards in play:
-  ```
+  ```python
   Board (cards in play):
   ['1_diamond_open_green', '2_squiggle_striped_blue', '3_oval_fill_red',...]
   ```
