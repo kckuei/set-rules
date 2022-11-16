@@ -12,7 +12,7 @@ For this project, students will write a class called `SetGame` that allows two p
 * The main goal of the game is to find combinations of cards that produce a 'Set'. 
 
 <img alt="Set-Isomorphic-Cards" src="./assets/set-isomorphic.svg" width="400"/>
-Sauce: Wikipedia
+Sauce: [Wikipedia](https://en.wikipedia.org/wiki/Set_(card_game))
 
 ## So, What Constitutes a Set?
 * A set satisfies all of the the conditions:
@@ -24,7 +24,7 @@ Sauce: Wikipedia
 * You can try this single-player [Set demo](http://www.setgame.com/set/puzzle) to get an idea of what is, and isn't a Set!
 
 ![Set](./assets/set.png)
-Sauce: Wikipedia
+Sauce: [Wikipedia](https://en.wikipedia.org/wiki/Set_(card_game))
 
 ## Game Play and Rules
 * The game is normally played by dealing 12, 15, 18 or more cards on the table. 
