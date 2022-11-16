@@ -20,7 +20,7 @@ Sauce: [Wikipedia](https://en.wikipedia.org/wiki/Set_(card_game))
   * Same number or 3 different numbers. 
   * Same shape or 3 different shapes.
   * Same shading or 3 different shadings.
-  * Same color 3 different colors. 
+  * Same color or 3 different colors. 
 * For example, the following three cards from a Set deck would constitute a set. Note each of the cards have a unique number, symbol, shading, and color, and are thus a set. 
  * ![Set](./assets/set.png)
  Sauce: [Wikipedia](https://en.wikipedia.org/wiki/Set_(card_game))
