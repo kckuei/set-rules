@@ -42,23 +42,30 @@ Sauce: [Wikipedia](https://en.wikipedia.org/wiki/Set_(card_game))
 Your code for the game must define the following class and methods described below. All data members must be **private**. Feel free to use a composition-, inheritance-, or mixed-OOP approach where it makes sense!
 
 ### SetGame Class 
-The SetGame object represents the game as played. The class should contain information about the players and table. It should contain the following methods (but may have more):
+The `SetGame` object represents the game as played. The class should contain information about the players and table. It should contain the following methods (but may have more):
 * create_deck: should create/initialize a deck of 81 isomorphic cards. 
 * create_players: add up to 6 players.
 * shuffle_deck: shuffles the card deck.
-* swap_cards(n): swaps n cards from the board and deck. 
+* swap_cards(n): swaps n cards from the board and deck.
+* call_set(player_id, [card_1_id, card_2_id, card_3_id]): allows a player to call a Set. The first argument is the player id, and the second argument is a list of size 3 representing the individual unique card identifiers.
+ * The method should validate the input
+  * The number of cards is 3, there are no repeat cards, and the card identifiers are valid.
+  * The player id is valid.
 
 ### Deck Class
-A Deck object represents the reserve cards (not in play on the Table).
+A `Deck` object represents the reserve cards (not in play on the Table).
 
 ### Table Class
-A Table object represents a board from which to display cards in play.
+A `Table` object represents a board from which to display cards in play.
+* display_table(): should print the table.
+ * A card can be represented as <1,2,3>_<diamond,squiggle,oval>_<open,striped,fill>_<green,blue,red>
+ * For example, 1_diamond_open_green or 2_peanut_squiggle_blue. 
 
 ### Players Class
-The Player object represents individual players.
+The `Player` object represents individual players.
 
 ### Card Class
-The Card objects represent individual cards. The card class should have attributes to describe the number, symbol, shape, and color. 
+The `Card` objects represent individual cards. The card class should have attributes to describe the number, symbol, shape, and color. 
 
 ## Extra Credit
 * Implement a method `save_game` for state preservation, and a method `load_game` to load a previously saved state.
