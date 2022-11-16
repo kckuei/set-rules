@@ -51,41 +51,41 @@ The `SetGame` object represents the game as played. The class should contain inf
 * **create_player**: should create and add up to 6 players to the game.
 * **create_deck**: should create/initialize a deck of 81 isomorphic cards. 
 * **call_set**(player_id, [card_1_id, card_2_id, card_3_id]): allows a player to call a Set. The first argument is the player id, and the second argument is a list representing the individual unique card identifiers.
-  * The method should validate the input first.
-    * The player id should be valid.
-    * The number of cards or items in the list should be 3
-    * There should be no repeat cards. 
-    * The identifiers for the card should be valid. The cards should be in play on the table.
-  * The method should also verify/check the validity of the Set input.
+  * The method should first validate the user input.
+    * The identifiers for the card should be valid, and the cards should be currently in play on the table (they can't point to cards in the Deck). 
+    * It should return "Invalid player id" if the player id is not valid.
+    * It should return "Invalid number of cards" if the number of items in the list is not equal to 3.
+  * The method should also verify/check the validity of the Set itself.
     * The method should return the string "That's a spiccyy Set" if it's a valid Set.
     * The method should return the string "Not quite a Set...better luck next time!" if it's an invalid Set.
+  * If the set is valid, the score of the user should be updated, and the cards should be cleared from the board. The removed cards should automatically be replaced with cards from the reserve deck.  
 * **declare_winner**: declares the winner of the game. 
-    * If the game is not yet ended, returns "Game has not ended. There are still more Sets to find!"
-    * If it is a tie, it should return "It's a tie! Everyone loses!"
-    * Otherwise, it should return "Player <id> is the winner!", where <id> is the player id.
+  * If the game is not yet ended, returns "Game has not ended. There are still more Sets to find!"
+  * If it is a tie, it should return "It's a tie! Everyone loses!"
+  * Otherwise, it should return "Player <id> is the winner!", where <id> is the player id.
 
 ### Deck Class
-A `Deck` object represents the reserve cards (not in play on the Table).
+A `Deck` object represents the reserve cards (not in play on the Table). Cards may be moved to/from the deck to the table, or to player piles.
 * **shuffle_deck**: should shuffle the reserve card deck.
 
 ### Table Class
 A `Table` object represents a board from which to display cards in play.
-* **swap_cards**(n): swaps n cards between the reserve deck and the table. 
-  * If there are less than n cards left in the deck, say k cards remaining, then only k cards shoudl be swapped. 
+* **swap_cards**(n): swaps n cards at random between the reserve deck and the table. 
+  * If there are less than n cards left in the deck, say k cards remaining, then only k cards should be swapped. 
 * **display_table**(): should print the table.
   * A card can be represented as <1,2,3>\_<diamond,squiggle,oval>\_<open,striped,fill>\_<green,blue,red>
-  * For example, the Set shown above would be represented by the following strings:
+  * For example, the first Set shown above would be represented by the following strings:
     * `'1_diamond_open_green'`
     * `'2_squiggle_striped_blue'`
     * `'3_oval_fill_red'`
-  * The method should output the current cards in play:
+  * The method should output the current cards in play on the table (order does not matter):
   ```python
   Board (cards in play):
   ['1_diamond_open_green', '2_squiggle_striped_blue', '3_oval_fill_red',...]
   ```
 
 ### Players Class
-The `Player` object represents individual players.
+The `Player` object represents individual players. It may have attributes for the id, score, etc.
 
 ### Card Class
 The `Card` objects represent individual cards. The card class should have attributes to describe the number, symbol, shape, and color. 
