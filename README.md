@@ -28,7 +28,7 @@ Sauce: [Wikipedia](https://en.wikipedia.org/wiki/Set_(card_game))
 
 ## Game Play and Rules
 * The game is normally played by dealing 12, 15, 18 or more cards on the table. 
-* A player calls "Set!" if they they they have spotted 3 cards that comprise a set (more on this later!).
+* A player calls "Set!" if they they they have spotted 3 cards that comprise a Set.
 * If a valid set, the three cards are removed from the table to the players pile. The board is then replenished with cards from the deck. 
 * Play continues until all cards have been played to the table and no more sets are to be found.
 * Players count how many cards they have in their stack at the end (each card is worth one point). The winner with the most points wins. 
