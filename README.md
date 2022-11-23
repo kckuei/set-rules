@@ -34,7 +34,7 @@ Sauce: [Wikipedia](https://en.wikipedia.org/wiki/Set_(card_game))
 * Try it out yourself with this [Set demo](http://www.setgame.com/set/puzzle)! This reosurce was used to generate the examples shown above.
 
 ## Game Play and Rules
-* The game is normally played by dealing 12, 15, 18 or more cards on the table. We'll use 12 cards for the project.
+* The game is normally played by dealing 12, 15, 18 or more cards on the table (face up). We'll use 12 cards for the project.
 * A player calls "Set!" when he or she thinks they have spotted 3 cards on the table that make a Set.
 * If it's a valid set, the three cards are moved from the table into the players pile. 
 * The board is then replenished with 3 more cards from the deck, or until there are no more cards in reserve.
